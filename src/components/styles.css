@@ -32,7 +32,7 @@
 }
 
 .listItem__content>input {
-    flex: 1;
+    width: 100%;
     text-align: center;
     outline: 1px solid black;
     border: none;
