@@ -10,7 +10,7 @@ function CardTips() {
     const { total, handleChangeTip, totalTip, tipPercent } = useRoot()
     return (
         <div className={"card__content"}>
-            <h3>FOOD LIST</h3>
+            <h3>TIPS CALCULATOR</h3>
             <div className="tips__total">
                 <span>Total</span>
                 <p>{formatter.format(total)}</p>
