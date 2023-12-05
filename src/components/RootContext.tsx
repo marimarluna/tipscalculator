@@ -1,7 +1,7 @@
 'use client'
 import { IContextRoot, Imeal } from "@/lib/mealsType";
 import usePersistState from "@/lib/usePersistState";
-import { ChangeEvent, ReactNode, createContext, useContext, useMemo, useState } from "react";
+import { ChangeEvent, ReactNode, createContext, useContext, useMemo } from "react";
 
 const defaultValues = {
     meals: [
@@ -47,7 +47,6 @@ export default function RootProvider({ children }: {
         if (target.valueAsNumber < 0 || isNaN(target.valueAsNumber)) return setTipPercent(0)
         setTipPercent(target.valueAsNumber)
     }
-
 
     return (
         <RootContext.Provider value={{ meals, createNew, deleteFood, editFood, total, tipPercent, totalTip, handleChangeTip }}>
