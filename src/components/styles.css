@@ -1,0 +1,123 @@
+.card__content {
+    background-color: #fff;
+    box-shadow: 0px 4px 12px 0px #BBD0CB;
+    border-radius: 12px;
+    padding: 1rem;
+    min-width: 300px;
+
+    >h3 {
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.listItem__content {
+    background-color: #3A2F5C;
+    color: white;
+    border-radius: 0.5rem;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    @media only screen and (max-width: 400px) {
+        flex-direction: column;
+    }
+}
+
+.listItem__content>input {
+    flex: 1;
+    text-align: center;
+    outline: 1px solid black;
+    border: none;
+}
+
+.listItem__content>input:disabled {
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+.listItem__content>button {
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+}
+
+.listItem__button__edit {
+    color: #33C3F0;
+}
+
+.listItem__button__delete {
+    color: #aa5c5c;
+}
+
+.listItem__button__save {
+    color: #77a377;
+}
+
+.form__content {
+    max-width: 640px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.form__title {
+    color: #f2f2f2;
+    font-size: 2rem;
+}
+
+.form__button {
+    background-color: #3A2F5C;
+    border-color: #3A2F5C;
+    color: #f2f2f2;
+    font-weight: bold;
+    border: none;
+    padding: .5rem;
+    border-radius: 0.2em;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.form__error {
+    background-color: #aa5c5c;
+    color: #F2F2F2;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.input {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 0.5px solid #BBD0CB;
+}
+
+.input:focus {
+    outline: 2px solid #33C3F0;
+}
+
+.tips__total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    align-items: center;
+    gap: 10px;
+    > p {
+        text-align: right;
+        font-weight: bold;
+    }
+    .input {
+        margin-bottom: 0;
+    }
+}
